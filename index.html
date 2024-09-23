@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dahatu-Kurdistan Educational Development Foundation</title>
     <link rel="stylesheet" href="styles/main.css">
-
 </head>
-<body>
- 
-
-
+<body class="site-layout">
     <header class="header">
         <nav class="header__nav">
             <a href="index.html" class="header__logo">KEDC</a>
@@ -20,21 +16,15 @@
                 <li class="header__menu-item"><a href="projects.html" class="header__menu-link">پڕۆژەکان</a></li>
                 <li class="header__menu-item"><a href="news.html" class="header__menu-link">هەواڵەکان</a></li>
                 <li class="header__menu-item"><a href="contact.html" class="header__menu-link">پەیوەندی</a></li>
-                <!-- ... other menu items ... -->
             </ul>
         </nav>
     </header>
 
-
-
-
-    
-
-    <main>
+    <main class="main-content">
         <section class="hero">
             <h1>داهاتوو-دەزگایی پەرەپێدانی پەروەردەیی کوردستان</h1>
             <p>بەهێزکردنی خوێندکارانی کورد لە ڕێگەی پەروەردەی نوێخوازەوە</p>
-            <a href="projects.html" class="cta-button">بینینی پڕۆژەکانمان</a>
+            <a href="projects.html" class="button">بینینی پڕۆژەکانمان</a>
         </section>
 
         <section class="featured-project">
@@ -42,23 +32,23 @@
             <img src="project-image.jpg" alt="وێنەی پڕۆژەی تایبەت">
             <h3>ناوی پڕۆژە</h3>
             <p>کورتەیەک دەربارەی پڕۆژەکە و گرنگی ئەو...</p>
-            <a href="projects.html" class="learn-more">زیاتر بزانە</a>
+            <a href="projects.html" class="button button--secondary">زیاتر بزانە</a>
         </section>
 
         <section class="about-summary">
             <h2>دەربارەی ئێمە</h2>
             <p>دەزگای پەرەپێدانی پەروەردەیی کوردستان دامەزراویەکی نوێ دامەزراوە کە تایبەتە بە دروستکردن و بەڕێوەبردنی پڕۆژە پەروەردەییەکان بۆ سوودی خوێندکارانی کورد...</p>
-            <a href="about.html" class="read-more">زیاتر بخوێنەوە</a>
+            <a href="about.html" class="button button--secondary">زیاتر بخوێنەوە</a>
         </section>
 
         <section class="latest-news">
             <h2>دوایین هەواڵەکان</h2>
             <div class="news-grid">
-                <article>
+                <article class="news-item">
                     <img src="news1.jpg" alt="وێنەی هەواڵی یەکەم">
                     <h3>سەردێڕی هەواڵ</h3>
                     <p>کورتەیەک لە هەواڵەکە...</p>
-                    <a href="news.html" class="read-more">زیاتر بخوێنەوە</a>
+                    <a href="news.html" class="button button--secondary">زیاتر بخوێنەوە</a>
                 </article>
                 <!-- Add more news articles as needed -->
             </div>
@@ -67,8 +57,8 @@
         <section class="community">
             <div class="upcoming-events">
                 <h2>ڕووداوە چاوەڕوانکراوەکان</h2>
-                <ul>
-                    <li>
+                <ul class="events-list">
+                    <li class="event-item">
                         <time datetime="2023-07-15">١٥ی ئۆکتۆبر</time>
                         <span>ناوی ڕووداو</span>
                     </li>
@@ -77,7 +67,7 @@
             </div>
             <div class="student-stories">
                 <h2>چیرۆکی خوێندکاران</h2>
-                <blockquote>
+                <blockquote class="student-quote">
                     <p>وتەیەکی کورت لە خوێندکارێک...</p>
                     <cite>ناوی خوێندکار</cite>
                 </blockquote>
@@ -85,34 +75,36 @@
         </section>
     </main>
 
-    <footer>
-        <div class="quick-links">
-            <h3>بەستەرە خێراکان</h3>
-            <ul>
-                <li><a href="about.html">دەربارە</a></li>
-                <li><a href="projects.html">پڕۆژەکان</a></li>
-                <li><a href="news.html">هەواڵەکان</a></li>
-                <li><a href="contact.html">پەیوەندی</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__title">بەستەرە خێراکان</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="about.html" class="footer__link">دەربارە</a></li>
+                    <li class="footer__list-item"><a href="projects.html" class="footer__link">پڕۆژەکان</a></li>
+                    <li class="footer__list-item"><a href="news.html" class="footer__link">هەواڵەکان</a></li>
+                    <li class="footer__list-item"><a href="contact.html" class="footer__link">پەیوەندی</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">تۆڕە کۆمەڵایەتییەکان</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link" aria-label="Facebook">Facebook</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link" aria-label="Twitter">Twitter</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link" aria-label="Instagram">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">هەواڵنامە</h3>
+                <form class="footer__form">
+                    <label for="email" class="footer__label">ئیمەیڵەکەت بنووسە:</label>
+                    <input type="email" id="email" name="email" class="footer__input" required>
+                    <button type="submit" class="footer__button">بەشداری بکە</button>
+                </form>
+            </div>
         </div>
-        <div class="social-media">
-            <h3>تۆڕە کۆمەڵایەتییەکان</h3>
-            <ul>
-                <li><a href="#" aria-label="Facebook">Facebook</a></li>
-                <li><a href="#" aria-label="Twitter">Twitter</a></li>
-                <li><a href="#" aria-label="Instagram">Instagram</a></li>
-            </ul>
-        </div>
-        <div class="newsletter">
-            <h3>هەواڵنامە</h3>
-            <form>
-                <label for="email">ئیمەیڵەکەت بنووسە:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">بەشداری بکە</button>
-            </form>
-        </div>
-        <p>&copy; 2024 داهاتوو-دەزگای پەرەپێدانی پەروەردەیی کوردستان. هەموو مافەکان پارێزراون.</p>
-        <p>پەرەپێدەر و دیزاینەر: کامیار ع. حەمەد</p>
+        <p class="footer__copyright">&copy; 2024 داهاتوو-دەزگای پەرەپێدانی پەروەردەیی کوردستان. هەموو مافەکان پارێزراون.</p>
+        <p class="footer__credit">پەرەپێدەر و دیزاینەر: کامیار ع. حەمەد</p>
     </footer>
 </body>
 </html>
