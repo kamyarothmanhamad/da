@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>هەواڵەکان - داهاتوو-دەزگای پەرەپێدانی پەروەردەیی کوردستان</title>
-    <link rel="stylesheet" href="main.css">
-
+    <title>هەواڵەکان - ناوەندی پەرەپێدانی پەروەردەیی کوردی</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo">KEDC</a>
             <ul>
-                <li><a href="index.html">سەرەکی</a></li>
+                <li><a href="index.html">ماڵەوە</a></li>
                 <li><a href="about.html">دەربارە</a></li>
                 <li><a href="projects.html">پڕۆژەکان</a></li>
                 <li><a href="news.html">هەواڵەکان</a></li>
@@ -23,51 +21,97 @@
 
     <main>
         <section class="hero">
-            <h1>دوایین هەواڵەکان</h1>
+            <h1>هەواڵ و چالاکییەکان</h1>
+            <p>دوایین هەواڵ و بابەتەکان دەربارەی پەروەردە و پڕۆژەکانمان</p>
         </section>
 
         <section class="featured-article">
             <article>
-                <img src="featured-news-image.jpg" alt="وێنەی هەواڵی تایبەت">
-                <h2>سەردێڕی هەواڵی تایبەت</h2>
-                <p class="date">٢٠٢٤/٠١/٠١</p>
-                <p>کورتەیەک لە ناوەڕۆکی هەواڵە تایبەتەکە...</p>
-                <a href="#" class="read-more">زیاتر بخوێنەوە</a>
+                <img src="featured-news.jpg" alt="وێنەی بابەتی تایبەت">
+                <h2>سەردێڕی بابەتی تایبەت</h2>
+                <p class="article-meta">
+                    <time datetime="2023-07-01">١ی تەمموزی ٢٠٢٣</time>
+                    <span class="author">نووسەر: ناوی نووسەر</span>
+                </p>
+                <p>کورتەیەک لە ناوەڕۆکی بابەتەکە... ئەم بەشە دەبێت کورتەیەکی ڕاکێشەر بێت بۆ خوێنەر.</p>
+                <a href="#" class="read-more">تەواوی بابەتەکە بخوێنەوە</a>
             </article>
         </section>
 
-        <section class="recent-articles">
-            <h2>هەواڵە نوێیەکان</h2>
-            <div class="articles-grid">
-                <article>
-                    <img src="news-image-1.jpg" alt="وێنەی هەواڵی یەکەم">
+        <section class="news-grid">
+            <h2>دوایین هەواڵەکان</h2>
+            <div class="articles">
+                <article class="news-card">
+                    <img src="news1.jpg" alt="وێنەی هەواڵی یەکەم">
                     <h3>سەردێڕی هەواڵ</h3>
-                    <p class="date">٢٠٢٣/١٢/١٥</p>
+                    <p class="article-meta">
+                        <time datetime="2023-06-15">١٥ی حوزەیرانی ٢٠٢٣</time>
+                    </p>
                     <p>کورتەیەک لە ناوەڕۆکی هەواڵەکە...</p>
                     <a href="#" class="read-more">زیاتر بخوێنەوە</a>
                 </article>
-                <article>
-                    <img src="news-image-2.jpg" alt="وێنەی هەواڵی دووەم">
+
+                <article class="news-card">
+                    <img src="news2.jpg" alt="وێنەی هەواڵی دووەم">
                     <h3>سەردێڕی هەواڵ</h3>
-                    <p class="date">٢٠٢٣/١٢/١٠</p>
+                    <p class="article-meta">
+                        <time datetime="2023-06-10">١٠ی حوزەیرانی ٢٠٢٣</time>
+                    </p>
                     <p>کورتەیەک لە ناوەڕۆکی هەواڵەکە...</p>
                     <a href="#" class="read-more">زیاتر بخوێنەوە</a>
                 </article>
-                <!-- Add more article elements as needed -->
+
+                <article class="news-card">
+                    <img src="news3.jpg" alt="وێنەی هەواڵی سێیەم">
+                    <h3>سەردێڕی هەواڵ</h3>
+                    <p class="article-meta">
+                        <time datetime="2023-06-05">٥ی حوزەیرانی ٢٠٢٣</time>
+                    </p>
+                    <p>کورتەیەک لە ناوەڕۆکی هەواڵەکە...</p>
+                    <a href="#" class="read-more">زیاتر بخوێنەوە</a>
+                </article>
+
+                <!-- Add more news articles as needed -->
             </div>
         </section>
 
-        <section class="pagination">
-            <button type="button" class="prev-page">پێشوو</button>
-            <button type="button" class="next-page">دواتر</button>
-        </section>
+        <nav class="pagination">
+            <ul>
+                <li><a href="#" aria-label="پەڕەی پێشوو">«</a></li>
+                <li><a href="#" aria-current="page">١</a></li>
+                <li><a href="#">٢</a></li>
+                <li><a href="#">٣</a></li>
+                <li><a href="#" aria-label="پەڕەی داهاتوو">»</a></li>
+            </ul>
+        </nav>
+
+        <aside class="sidebar">
+            <section class="categories">
+                <h2>جۆرەکانی بابەت</h2>
+                <ul>
+                    <li><a href="#">پەروەردە</a></li>
+                    <li><a href="#">تەکنەلۆژیا</a></li>
+                    <li><a href="#">چالاکییەکانی ناوەند</a></li>
+                    <li><a href="#">سەرکەوتنەکان</a></li>
+                </ul>
+            </section>
+            <section class="archive">
+                <h2>ئەرشیف</h2>
+                <ul>
+                    <li><a href="#">حوزەیران ٢٠٢٣</a></li>
+                    <li><a href="#">ئایار ٢٠٢٣</a></li>
+                    <li><a href="#">نیسان ٢٠٢٣</a></li>
+                    <!-- Add more months as needed -->
+                </ul>
+            </section>
+        </aside>
     </main>
 
     <footer>
         <div class="quick-links">
             <h3>بەستەرە خێراکان</h3>
             <ul>
-                <li><a href="index.html">سەرەکی</a></li>
+                <li><a href="index.html">ماڵەوە</a></li>
                 <li><a href="about.html">دەربارە</a></li>
                 <li><a href="projects.html">پڕۆژەکان</a></li>
                 <li><a href="contact.html">پەیوەندی</a></li>
@@ -89,8 +133,7 @@
                 <button type="submit">بەشداری بکە</button>
             </form>
         </div>
-        <p>&copy; 2024 داهاتوو-دەزگای پەرەپێدانی پەروەردەیی کوردستان. هەموو مافەکان پارێزراون.</p>
-        <p>پەرەپێدەر و دیزاینەر: کامیار ع. حەمەد</p>
+        <p>&copy; 2023 ناوەندی پەرەپێدانی پەروەردەیی کوردی. هەموو مافەکان پارێزراون.</p>
     </footer>
 </body>
 </html>
