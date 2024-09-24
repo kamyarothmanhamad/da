@@ -1,0 +1,14 @@
+/* Subtle transitions for interactive elements */
+a, button {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Example of a CSS animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
