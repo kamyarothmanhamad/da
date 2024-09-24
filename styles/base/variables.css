@@ -1,14 +1,12 @@
 
+
 :root {
   /* Colors */
- /* Light mode colors */
   --color-primary: #1A5F7A;
   --color-secondary: #FFA500;
   --color-text: #333333;
   --color-background: #FFFFFF;
-  --color-background-alt: #F5F5F5;
-
-  
+  --color-background-alt: #F5F5F5; /* For alternating backgrounds */
   
   /* Typography */
   --font-size-base: 16px;
@@ -26,16 +24,3 @@
   /* Transitions */
   --transition-speed: 0.3s;
 }
-
-
-
-
-
-  [data-theme="dark"] {
-  --color-primary: #4ECDC4;
-  --color-secondary: #FFD700;
-  --color-text: #F0F0F0;
-  --color-background: #2C3E50;
-  --color-background-alt: #34495E;
-}
-  
