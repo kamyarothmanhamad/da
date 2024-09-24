@@ -1,8 +1,25 @@
+
 :root {
+  /* Colors */
   --color-primary: #1A5F7A;
   --color-secondary: #FFA500;
   --color-text: #333333;
+  --color-background: #FFFFFF;
+  --color-background-alt: #F5F5F5; /* For alternating backgrounds */
+  
+  /* Typography */
   --font-size-base: 16px;
   --font-family-main: 'Amiri', Arial, sans-serif;
   --font-family-headings: 'Noto Sans Arabic', Arial, sans-serif;
+  
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+  
+  /* Borders */
+  --border-radius: 4px;
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
 }
