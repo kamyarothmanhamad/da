@@ -12,7 +12,7 @@
   /* Typography */
   --font-size-base: 16px;
   --font-family-main: 'Amiri', serif; /* Update with serif fallback */
-  --font-family-headings: 'Noto Sans Arabic', Arial, sans-serif; /* Update with Arial as fallback */
+  --font-family-headings: 'Noto Sans Arabic'; /* Update with Arial as fallback */
   
   /* Spacing */
   --spacing-small: 0.5rem;
