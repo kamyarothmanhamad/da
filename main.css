@@ -128,6 +128,29 @@ a:hover {
   padding: 1rem 0;
 }
 
+
+
+/* search input styles  */
+.header__search {
+    position: relative;
+}
+
+.header__search input {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 0;
+}
+
+.header__search:focus-within input {
+    opacity: 1;
+    width: 200px; /* Adjust as needed */
+}
+
+
+
+
+
+
 /* change background on scroll*/
 .header.scrolled {
     background-color: rgba(255, 255, 255, 0.9);
