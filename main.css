@@ -5,7 +5,8 @@
   /* Colors */
   --color-primary: #1A5F7A;
   --color-secondary: #FFA500;
-  --color-text: #333333;
+  --color-text: #FFA500;
+  --color-text-sec: #333333
   --color-background: #FFFFFF;
   --color-background-alt: #F5F5F5;
   
@@ -115,7 +116,7 @@ a:hover {
 .footer { grid-area: footer; }
 
 /* ====================================
-   HEADER STYLES --color-background
+   HEADER STYLES 
    ==================================== */
 .header {
   position: sticky;
@@ -144,7 +145,7 @@ a:hover {
 .header__logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-background);
+  color: var(--color-primary);
 }
 
 .header__menu {
@@ -168,7 +169,7 @@ a:hover {
 
 .header__menu-link:hover,
 .header__menu-link:focus {
-  color: var(--color-secondary);
+  color: var( --color-text-sec);
 }
 
 /* Responsive header layout */
