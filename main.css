@@ -1,4 +1,6 @@
-/* Variables */
+/* ====================================
+   VARIABLES
+   ==================================== */
 :root {
   /* Colors */
   --color-primary: #1A5F7A;
@@ -24,14 +26,18 @@
   --transition-speed: 0.3s;
 }
 
-/* Reset */
+/* ====================================
+   RESET
+   ==================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base Styles */
+/* ====================================
+   BASE STYLES
+   ==================================== */
 body {
   font-family: var(--font-family-main);
   font-size: var(--font-size-base);
@@ -64,14 +70,16 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Layout */
-
+/* ====================================
+   LAYOUT
+   ==================================== */
 .container {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
 
+/* Responsive container sizes */
 @media screen and (min-width: 768px) {
   .container { max-width: 750px; }
 }
@@ -84,6 +92,7 @@ a:hover {
   .container { max-width: 1170px; }
 }
 
+/* Grid layout for the entire site */
 .site-layout {
   display: grid;
   grid-template-areas:
@@ -100,18 +109,9 @@ a:hover {
 }
 .footer { grid-area: footer; }
 
-
-
-
-@media screen and (min-width: 768px) {
-  .main-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-  }
-}
-
-/* Header Styles */
+/* ====================================
+   HEADER STYLES
+   ==================================== */
 .header {
   background-color: var(--color-background);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -154,6 +154,7 @@ a:hover {
   color: var(--color-secondary);
 }
 
+/* Responsive header layout */
 @media screen and (min-width: 768px) {
   .header__nav {
     flex-direction: row;
@@ -175,7 +176,9 @@ a:hover {
   }
 }
 
-/* Footer Styles */
+/* ====================================
+   FOOTER STYLES
+   ==================================== */
 .footer {
   background-color: #15495E;
   color: #FFFFFF;
@@ -239,6 +242,7 @@ a:hover {
   background-color: #FF8C00;
 }
 
+/* Responsive footer layout */
 @media screen and (min-width: 768px) {
   .footer__content {
     flex-direction: row;
@@ -251,7 +255,9 @@ a:hover {
   }
 }
 
-/* Button Styles */
+/* ====================================
+   BUTTON STYLES
+   ==================================== */
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -280,7 +286,9 @@ a:hover {
   color: #FFFFFF;
 }
 
-/* Theme Toggle */
+/* ====================================
+   THEME TOGGLE
+   ==================================== */
 .theme-toggle {
   background: none;
   border: none;
@@ -294,7 +302,9 @@ a:hover {
   opacity: 0.8;
 }
 
-/* Accessibility */
+/* ====================================
+   ACCESSIBILITY
+   ==================================== */
 a:focus,
 button:focus,
 input:focus,
@@ -314,7 +324,9 @@ select:focus {
   }
 }
 
-/* Animations */
+/* ====================================
+   ANIMATIONS
+   ==================================== */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -324,12 +336,16 @@ select:focus {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Utility Classes */
+/* ====================================
+   UTILITY CLASSES
+   ==================================== */
 .mt-1 { margin-top: 1rem; }
 .mb-1 { margin-bottom: 1rem; }
 .text-center { text-align: center; }
 
-/* News Grid */
+/* ====================================
+   NEWS GRID
+   ==================================== */
 .news-grid article:nth-child(odd) {
   background-color: var(--color-background-alt);
 }
@@ -342,4 +358,7 @@ select:focus {
   contain: content;
 }
 
+/* ====================================
+   ADDITIONAL STYLES
+   ==================================== */
 /* Add any additional styles for specific pages here */
