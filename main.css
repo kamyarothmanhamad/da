@@ -11,8 +11,8 @@
   
   /* Typography */
   --font-size-base: 16px;
-  --font-family-main: 'Amiri', Arial, sans-serif;
-  --font-family-headings: 'Noto Sans Arabic', Arial, sans-serif;
+  --font-family-main: 'Amiri', serif; /* Update with serif fallback */
+  --font-family-headings: 'Noto Sans Arabic', Arial, sans-serif; /* Update with Arial as fallback */
   
   /* Spacing */
   --spacing-small: 0.5rem;
@@ -48,7 +48,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-headings);
+  font-family: var(--font-family-headings); /* Use Noto Sans Arabic for headings */
   color: var(--color-primary);
   margin-bottom: 1rem;
 }
@@ -175,6 +175,7 @@ a:hover {
     margin-inline-start: 0;
   }
 }
+
 /* ====================================
    FOOTER STYLES
    ==================================== */
