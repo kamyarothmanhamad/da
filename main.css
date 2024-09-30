@@ -115,14 +115,14 @@ a:hover {
 .footer { grid-area: footer; }
 
 /* ====================================
-   HEADER STYLES
+   HEADER STYLES --color-background
    ==================================== */
 .header {
   position: sticky;
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s, box-shadow 0.3s;
-  background-color: var(--color-background);
+  background-color: var(--color-primary);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 1rem 0;
 }
