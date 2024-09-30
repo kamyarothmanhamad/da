@@ -162,14 +162,14 @@ a:hover {
 }
 
 .header__menu-link {
-  color: var(--color-text);
+  color: var(--color-text-sec);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .header__menu-link:hover,
 .header__menu-link:focus {
-  color: var( --color-text-sec);
+  color: var( --color-text);
 }
 
 /* Responsive header layout */
