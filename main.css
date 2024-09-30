@@ -65,6 +65,7 @@ a:hover {
 }
 
 /* Layout */
+
 .container {
   width: 100%;
   padding: 0 20px;
@@ -93,8 +94,14 @@ a:hover {
 }
 
 .header { grid-area: header; }
-.main-content { grid-area: main; }
+.main-content { 
+  grid-area: main;
+  width: 100%;
+}
 .footer { grid-area: footer; }
+
+
+
 
 @media screen and (min-width: 768px) {
   .main-content {
