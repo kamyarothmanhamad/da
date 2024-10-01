@@ -3,28 +3,28 @@
    ==================================== */
 :root {
   /* Colors */
-  --color-primary: #1A5F7A;
-  --color-secondary: #FFA500;
-  --color-text: #FFA500;
-  --color-text-sec: #333333;
-  --color-background: #FFFFFF;
-  --color-background-alt: #F5F5F5;
+  --color-primary: #1A5F7A; /* Primary color for the site */
+  --color-secondary: #FFA500; /* Secondary color for buttons and links */
+  --color-text: #FFA500; /* Color for main text */
+  --color-text-sec: #333333; /* Secondary text color for better readability */
+  --color-background: #FFFFFF; /* Main background color */
+  --color-background-alt: #F5F5F5; /* Alternative background color for sections */
   
   /* Typography */
-  --font-size-base: 16px;
+  --font-size-base: 16px; /* Base font size for the site */
   --font-family-main: 'Noto Sans Arabic'; /* Main font for body text */
   --font-family-headings: 'Noto Sans Arabic'; /* Font for headings */
   
   /* Spacing */
-  --spacing-small: 0.5rem; /* Small spacing */
-  --spacing-medium: 1rem; /* Medium spacing */
-  --spacing-large: 1.5rem; /* Large spacing */
+  --spacing-small: 0.5rem; /* Small spacing for minor elements */
+  --spacing-medium: 1rem; /* Medium spacing for sections */
+  --spacing-large: 1.5rem; /* Large spacing for major sections */
   
   /* Borders */
-  --border-radius: 4px; /* Border radius for rounded corners */
+  --border-radius: 4px; /* Standard border radius for buttons and inputs */
   
   /* Transitions */
-  --transition-speed: 0.3s; /* Duration for transition effects */
+  --transition-speed: 0.3s; /* Standard speed for transitions */
 }
 
 /* ====================================
@@ -40,38 +40,38 @@
    BASE STYLES
    ==================================== */
 body {
-  font-family: var(--font-family-main); /* Set main font */
+  font-family: var(--font-family-main); /* Set main font for body text */
   font-size: var(--font-size-base); /* Set base font size */
-  line-height: 1.6; /* Line height for readability */
-  color: var(--color-text-sec); /* Set text color */
+  line-height: 1.6; /* Set line height for better readability */
+  color: var(--color-text-sec); /* Set color for text */
   background-color: var(--color-background); /* Set background color */
-  padding: var(--spacing-large); /* Add padding around the body content */
-  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease; /* Smooth transition for background and text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+  padding: var(--spacing-large); /* Add large padding to the body for breathing room */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-headings); /* Use the specified font for headings */
-  color: var(--color-primary); /* Set primary color for headings */
-  margin-bottom: var(--spacing-medium); /* Add bottom margin for spacing between headings and following content */
+  font-family: var(--font-family-headings); /* Use Noto Sans Arabic for headings */
+  color: var(--color-primary); /* Set heading color */
+  margin-bottom: var(--spacing-medium); /* Add medium bottom margin for spacing between headings */
 }
 
-h1 { font-size: 2.5rem; /* Font size for h1 heading */ }
-h2 { font-size: 2rem; /* Font size for h2 heading */ }
-h3 { font-size: 1.75rem; /* Font size for h3 heading */ }
+h1 { font-size: 2.5rem; } /* Size for the main heading */
+h2 { font-size: 2rem; } /* Size for secondary headings */
+h3 { font-size: 1.75rem; } /* Size for tertiary headings */
 
-/* Text shadow for headings */
+/* Text shadow for enhanced readability */
 h1, h2 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow effect */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 p { 
-  margin-bottom: var(--spacing-medium); /* Add bottom margin for spacing between paragraphs */
+  margin-bottom: var(--spacing-medium); /* Add medium margin below paragraphs for spacing */
 }
 
 a {
-  color: var(--color-secondary); /* Set color for links */
+  color: var(--color-secondary); /* Set link color */
   text-decoration: none; /* Remove underline from links */
-  transition: color var(--transition-speed) ease; /* Smooth transition for link color */
+  transition: color 0.3s ease; /* Smooth transition for link color */
 }
 
 a:hover {
@@ -84,29 +84,29 @@ a:hover {
    ==================================== */
 .hero {
   height: 100vh; /* Full viewport height for hero section */
-  background: url('hero-image.jpg') center/cover no-repeat; /* Background image styling */
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  background: url('hero-image.jpg') center/cover no-repeat; /* Background image settings */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   text-align: center; /* Center text alignment */
-  color: #ffffff; /* Text color for hero section */
-  padding: var(--spacing-large); /* Add padding to the hero section */
+  color: #ffffff; /* White text for contrast */
+  padding: var(--spacing-large); /* Add padding to prevent content from touching edges */
 }
 
 .hero h1 {
-  font-size: 3rem; /* Font size for hero h1 heading */
-  margin-bottom: var(--spacing-medium); /* Add margin below the heading */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Stronger text shadow for visibility */
+  font-size: 3rem; /* Size for the hero heading */
+  margin-bottom: var(--spacing-medium); /* Add medium margin below the hero heading */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Strong shadow for better visibility */
 }
 
 .hero button {
-  padding: 0.75rem 1.5rem; /* Padding for buttons */
-  background-color: var(--color-secondary); /* Button background color */
-  color: #ffffff; /* Button text color */
-  border: none; /* Remove border */
-  border-radius: var(--border-radius); /* Apply border radius */
+  padding: 0.75rem 1.5rem; /* Add padding for the button */
+  background-color: var(--color-secondary); /* Set button background color */
+  color: #ffffff; /* Set button text color */
+  border: none; /* Remove default border */
+  border-radius: var(--border-radius); /* Rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color var(--transition-speed) ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .hero button:hover {
@@ -117,152 +117,185 @@ a:hover {
    LAYOUT
    ==================================== */
 .container {
-  width: 100%; /* Full width container */
-  padding: 0 var(--spacing-large); /* Add horizontal padding */
+  width: 100%; /* Full width for the container */
+  padding: 0 var(--spacing-large); /* Add horizontal padding to the container */
   margin: 0 auto; /* Center the container */
 }
 
 /* Responsive container sizes */
 @media screen and (min-width: 768px) {
-  .container { max-width: 750px; } /* Set max-width for medium screens */
+  .container { 
+    max-width: 750px; /* Max width for medium screens */
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .container { max-width: 970px; } /* Set max-width for large screens */
+  .container { 
+    max-width: 970px; /* Max width for large screens */
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container { max-width: 1170px; } /* Set max-width for extra large screens */
+  .container { 
+    max-width: 1170px; /* Max width for extra large screens */
+  }
 }
 
 /* Grid layout for the entire site */
 .site-layout {
   display: grid; /* Use grid layout */
-  grid-template-areas:
-    "header"
-    "main"
-    "footer"; /* Define grid areas for header, main, and footer */
-  min-height: 100vh; /* Ensure full viewport height */
+  grid-template-areas: "header" "main" "footer"; /* Define grid areas */
+  min-height: 100vh; /* Minimum height to fill the viewport */
 }
 
-.header { grid-area: header; /* Assign grid area for header */ }
+.header { 
+  grid-area: header; /* Assign header to grid area */
+}
+
 .main-content { 
-  grid-area: main; /* Assign grid area for main content */
+  grid-area: main; /* Assign main content to grid area */
   width: 100%; /* Full width for main content */
   padding: var(--spacing-large); /* Add padding to main content */
 }
-.footer { grid-area: footer; /* Assign grid area for footer */ }
+
+.footer { 
+  grid-area: footer; /* Assign footer to grid area */
+}
 
 /* ====================================
    HEADER STYLES 
    ==================================== */
 .multi-layer-header {
-    width: 100%; /* Full width header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+  width: 100%; /* Full width for the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Secondary Layer: Promotional Banner */
 .header__secondary {
-    background-color: var(--color-secondary); /* Background color for secondary header */
-    color: #ffffff; /* Text color for secondary header */
-    text-align: center; /* Center text alignment */
-    padding: var(--spacing-medium); /* Add padding for inner spacing */
-    font-size: 1rem; /* Font size for secondary header */
-    transition: background-color var(--transition-speed) ease; /* Smooth transition for background color */
+  background-color: var(--color-secondary); /* Background color for the promotional banner */
+  color: #ffffff; /* White text for contrast */
+  text-align: center; /* Center text alignment */
+  padding: var(--spacing-small) 0; /* Vertical padding for banner */
+  font-size: 1rem; /* Font size for the banner */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 .header__secondary a {
-    color: #ffffff; /* Link color in secondary header */
-    text-decoration: underline; /* Underline links in secondary header */
-    margin-left: var(--spacing-small); /* Add left margin for spacing */
+  color: #ffffff; /* White color for links */
+  text-decoration: underline; /* Underline links */
+  margin-left: var(--spacing-small); /* Small left margin for spacing */
 }
 
 /* Primary Layer: Main Navigation */
 .header__primary {
-    background-color: var(--color-primary); /* Background color for primary header */
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
-    padding: var(--spacing-medium); /* Add padding for spacing */
+  background-color: var(--color-primary); /* Primary background color for navigation */
+  display: flex; /* Flexbox layout for navigation */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: var(--spacing-medium) var(--spacing-large); /* Padding for navigation */
 }
 
 .header__logo a {
-    color: #ffffff; /* Logo link color */
-    font-size: 1.5rem; /* Font size for logo */
-    font-weight: bold; /* Bold font for logo */
-    text-decoration: none; /* Remove underline from logo */
-    transition: color var(--transition-speed) ease; /* Smooth transition for logo color */
+  color: #ffffff; /* White color for logo link */
+  font-size: 1.5rem; /* Font size for logo */
+  font-weight: bold; /* Bold font weight for logo */
+  text-decoration: none; /* Remove underline from logo */
+  transition: color 0.3s ease; /* Smooth transition for logo color */
 }
 
 .header__nav {
-    display: flex; /* Use flexbox for navigation items */
+  display: flex; /* Flexbox layout for navigation items */
 }
 
 .header__menu {
-    display: flex; /* Use flexbox for menu items */
-    list-style-type: none; /* Remove default list styling */
+  display: flex; /* Flexbox layout for menu items */
+  list-style-type: none; /* Remove default list styling */
 }
 
 .header__menu-item {
-    margin-left: var(--spacing-large); /* Add left margin for spacing between menu items */
+  margin-left: var(--spacing-medium); /* Medium left margin for spacing between menu items */
 }
 
 .header__menu-link {
-    color: #ffffff; /* Link color in menu */
-    text-decoration: none; /* Remove underline from menu links */
-    transition: color var(--transition-speed) ease; /* Smooth transition for link color */
-    font-size: 1.1rem; /* Font size for menu links */
+  color: #ffffff; /* White color for menu links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth transition for link color */
+  font-size: 1.1rem; /* Font size for menu links */
 }
 
 .header__menu-link:hover,
 .header__menu-link:focus {
-    color: var(--color-secondary); /* Change link color on hover/focus */
+  color: var(--color-secondary); /* Change color on hover/focus */
 }
 
 /* Responsive header layout */
 @media screen and (max-width: 768px) {
-    .header__primary {
-        flex-direction: column; /* Stack navigation items vertically */
-        padding: var(--spacing-medium); /* Add padding for spacing */
-    }
+  .header__primary {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text alignment */
+    padding: var(--spacing-medium); /* Add padding */
+  }
 
-    .header__nav {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: flex-start; /* Align items to the left */
-    }
+  .header__nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    margin-top: var(--spacing-medium); /* Add top margin for spacing */
+  }
 
-    .header__menu-item {
-        margin-left: 0; /* Remove left margin for stacked items */
-        margin-bottom: var(--spacing-small); /* Add bottom margin for spacing */
-    }
+  .header__menu-item {
+    margin-left: 0; /* Reset left margin for mobile view */
+    margin-bottom: var(--spacing-small); /* Add bottom margin for spacing */
+  }
 }
 
 /* ====================================
-   FOOTER STYLES 
+   FOOTER STYLES
    ==================================== */
 .footer {
-    background-color: var(--color-background-alt); /* Background color for footer */
-    color: var(--color-text); /* Text color for footer */
-    text-align: center; /* Center text alignment */
-    padding: var(--spacing-large); /* Add padding for footer */
-    font-size: 0.9rem; /* Font size for footer */
+  background-color: var(--color-background-alt); /* Background color for footer */
+  padding: var(--spacing-large); /* Add padding to footer */
+  text-align: center; /* Center text alignment */
+  color: var(--color-text-sec); /* Set footer text color */
 }
 
 .footer a {
-    color: var(--color-primary); /* Link color in footer */
-    text-decoration: none; /* Remove underline from footer links */
+  color: var(--color-primary); /* Link color in footer */
+  text-decoration: underline; /* Underline links */
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Underline links on hover */
+  color: var(--color-secondary); /* Change footer link color on hover */
 }
 
 /* ====================================
-   UTILITY CLASSES
+   BUTTON STYLES
    ==================================== */
-.mt-1 { margin-top: var(--spacing-small); } /* Utility class for small top margin */
-.mt-2 { margin-top: var(--spacing-medium); } /* Utility class for medium top margin */
-.mt-3 { margin-top: var(--spacing-large); } /* Utility class for large top margin */
-.mb-1 { margin-bottom: var(--spacing-small); } /* Utility class for small bottom margin */
-.mb-2 { margin-bottom: var(--spacing-medium); } /* Utility class for medium bottom margin */
-.mb-3 { margin-bottom: var(--spacing-large); } /* Utility class for large bottom margin */
+.button {
+  padding: 0.75rem 1.5rem; /* Padding for buttons */
+  background-color: var(--color-secondary); /* Background color for buttons */
+  color: #ffffff; /* Text color for buttons */
+  border: none; /* Remove border */
+  border-radius: var(--border-radius); /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color var(--transition-speed) ease; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #ff8c00; /* Change button color on hover */
+}
+
+/* ====================================
+   MEDIA QUERIES
+   ==================================== */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Smaller font size for headings on mobile */
+  }
+
+  p {
+    font-size: 0.9rem; /* Smaller font size for paragraphs on mobile */
+  }
+
+  .container {
+    padding: 0 var(--spacing-small); /* Reduce horizontal padding on mobile */
+  }
+}
