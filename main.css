@@ -103,11 +103,27 @@ a:hover {
   z-index: 1; /* Ensure the image is behind the content */
 }
 
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: 1; /* Ensure it sits between the image and the content */
+}
+
 .hero-content {
   position: relative; /* Content on top of the image */
   z-index: 2; /* Ensure the content is above the image */
   text-align: center; /* Center text */
   color: #fff; /* Text color */
+  opacity: 0; /* Start hidden for fade-in effect */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.hero-content.show {
+  opacity: 1; /* Show when the class is added */
 }
 
 /* Optional: Add some padding to the text for better readability */
@@ -115,25 +131,15 @@ a:hover {
 .hero-content p {
   margin: 0; /* Reset margin */
   padding: 0.5rem; /* Add some padding */
-  font-size: 3rem; /* or use 5vw for responsive scaling */
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Responsive font size */
+}
+
+.hero-content p {
   font-size: 1.5rem; /* Adjust based on your design */
-
-
 }
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    z-index: 1; /* Ensure it sits between the image and the content */
-}
-
-
-
-
 
 
 
