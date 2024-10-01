@@ -190,20 +190,25 @@ a:hover {
 
 
 
-.parallax-divider {
-  position: relative;
-  height: 100px; /* Adjust as needed for the desired height */
-  background-image: url('hero.jpg'); /* Use your own image here */
-  background-attachment: fixed; /* Makes the parallax effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1; /* Keeps it in the correct visual layer */
+@keyframes glitch {
+  0% { clip: rect(42px, 9999px, 44px, 0); }
+  10% { clip: rect(85px, 9999px, 75px, 0); }
+  20% { clip: rect(99px, 9999px, 40px, 0); }
+  30% { clip: rect(50px, 9999px, 120px, 0); }
+  40% { clip: rect(45px, 9999px, 65px, 0); }
+  50% { clip: rect(12px, 9999px, 77px, 0); }
+  60% { clip: rect(88px, 9999px, 100px, 0); }
+  70% { clip: rect(33px, 9999px, 90px, 0); }
+  80% { clip: rect(68px, 9999px, 50px, 0); }
+  90% { clip: rect(20px, 9999px, 80px, 0); }
+  100% { clip: rect(77px, 9999px, 43px, 0); }
 }
 
-
-
-
+.parallax-divider {
+  position: relative;
+  animation: glitch 1.5s infinite;
+  background: url('glitchy-image.jpg') center/cover no-repeat;
+}
 
 
 
