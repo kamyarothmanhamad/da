@@ -184,6 +184,32 @@ a:hover {
 }
 .footer { grid-area: footer; }
 
+
+
+
+
+
+
+.parallax-divider {
+  width: 80%; /* Adjust width as needed */
+  height: 2px; /* Adjust thickness as needed */
+  background-color: var(--color-primary); /* Use primary color or any other */
+  margin: 2rem auto; /* Center the divider with some space above and below */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ====================================
    HEADER STYLES 
    ==================================== */
