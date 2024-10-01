@@ -115,10 +115,21 @@ a:hover {
 .hero-content p {
   margin: 0; /* Reset margin */
   padding: 0.5rem; /* Add some padding */
+  font-size: 3rem; /* or use 5vw for responsive scaling */
+  font-size: 1.5rem; /* Adjust based on your design */
+
+
 }
 
-
-
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Ensure it sits between the image and the content */
+}
 
 
 
