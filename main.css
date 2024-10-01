@@ -192,7 +192,7 @@ a:hover {
 
 .parallax-divider {
   position: relative;
-  height: 300px; /* Adjust as needed for the desired height */
+  height: 100px; /* Adjust as needed for the desired height */
   background-image: url('hero.jpg'); /* Use your own image here */
   background-attachment: fixed; /* Makes the parallax effect */
   background-position: center;
