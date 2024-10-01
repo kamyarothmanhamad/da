@@ -191,16 +191,15 @@ a:hover {
 
 
 .parallax-divider {
-  width: 80%; /* Adjust width as needed */
-  height: 2px; /* Adjust thickness as needed */
-  background-color: var(--color-primary); /* Use primary color or any other */
-  margin: 2rem auto; /* Center the divider with some space above and below */
+  position: relative;
+  height: 300px; /* Adjust as needed for the desired height */
+  background-image: url('path/to/your/divider-image.jpg'); /* Use your own image here */
+  background-attachment: fixed; /* Makes the parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1; /* Keeps it in the correct visual layer */
 }
-
-
-
-
-
 
 
 
