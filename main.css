@@ -12,493 +12,257 @@
   
   /* Typography */
   --font-size-base: 16px;
-  --font-family-main: 'Noto Sans Arabic'; /* Update with serif fallback Amiri', serif */
-  --font-family-headings: 'Noto Sans Arabic'; /* Update with Arial as fallback */
+  --font-family-main: 'Noto Sans Arabic'; /* Main font for body text */
+  --font-family-headings: 'Noto Sans Arabic'; /* Font for headings */
   
   /* Spacing */
-  --spacing-small: 0.5rem;
-  --spacing-medium: 1rem;
-  --spacing-large: 1.5rem;
+  --spacing-small: 0.5rem; /* Small spacing */
+  --spacing-medium: 1rem; /* Medium spacing */
+  --spacing-large: 1.5rem; /* Large spacing */
   
   /* Borders */
-  --border-radius: 4px;
+  --border-radius: 4px; /* Border radius for rounded corners */
   
   /* Transitions */
-  --transition-speed: 0.3s;
+  --transition-speed: 0.3s; /* Duration for transition effects */
 }
 
 /* ====================================
    RESET
    ==================================== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Reset all margins to zero */
+  padding: 0; /* Reset all paddings to zero */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* ====================================
    BASE STYLES
    ==================================== */
 body {
-  font-family: var(--font-family-main);
-  font-size: var(--font-size-base);
-  line-height: 1.6;
-  color: var(--color-text-sec);
-  background-color: var(--color-background);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-family-main); /* Set main font */
+  font-size: var(--font-size-base); /* Set base font size */
+  line-height: 1.6; /* Line height for readability */
+  color: var(--color-text-sec); /* Set text color */
+  background-color: var(--color-background); /* Set background color */
+  padding: var(--spacing-large); /* Add padding around the body content */
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease; /* Smooth transition for background and text color */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-headings); /* Use Noto Sans Arabic for headings */
-  color: var(--color-primary);
-  margin-bottom: 1rem;
+  font-family: var(--font-family-headings); /* Use the specified font for headings */
+  color: var(--color-primary); /* Set primary color for headings */
+  margin-bottom: var(--spacing-medium); /* Add bottom margin for spacing between headings and following content */
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
+h1 { font-size: 2.5rem; /* Font size for h1 heading */ }
+h2 { font-size: 2rem; /* Font size for h2 heading */ }
+h3 { font-size: 1.75rem; /* Font size for h3 heading */ }
 
-/* text shadow */
+/* Text shadow for headings */
 h1, h2 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow effect */
 }
 
-p { margin-bottom: 1rem; }
+p { 
+  margin-bottom: var(--spacing-medium); /* Add bottom margin for spacing between paragraphs */
+}
 
 a {
-  color: var(--color-secondary);
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: var(--color-secondary); /* Set color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color var(--transition-speed) ease; /* Smooth transition for link color */
 }
 
 a:hover {
-  color: #FF8C00;
-  text-decoration: underline;
+  color: #FF8C00; /* Change link color on hover */
+  text-decoration: underline; /* Underline links on hover */
 }
-
-
-
-
 
 /* ====================================
    HERO SECTION STYLES
    ==================================== */
-
 .hero {
-  height: 100vh;
-  background: url('hero-image.jpg') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
+  height: 100vh; /* Full viewport height for hero section */
+  background: url('hero-image.jpg') center/cover no-repeat; /* Background image styling */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center text alignment */
+  color: #ffffff; /* Text color for hero section */
+  padding: var(--spacing-large); /* Add padding to the hero section */
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-size: 3rem; /* Font size for hero h1 heading */
+  margin-bottom: var(--spacing-medium); /* Add margin below the heading */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Stronger text shadow for visibility */
 }
 
 .hero button {
-  padding: 0.75rem 1.5rem;
-  background-color: var(--color-secondary);
-  color: #ffffff;
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 0.75rem 1.5rem; /* Padding for buttons */
+  background-color: var(--color-secondary); /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: var(--border-radius); /* Apply border radius */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color var(--transition-speed) ease; /* Smooth transition for background color */
 }
 
 .hero button:hover {
-  background-color: #ff8c00;
+  background-color: #ff8c00; /* Change button color on hover */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ====================================
    LAYOUT
    ==================================== */
 .container {
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
+  width: 100%; /* Full width container */
+  padding: 0 var(--spacing-large); /* Add horizontal padding */
+  margin: 0 auto; /* Center the container */
 }
 
 /* Responsive container sizes */
 @media screen and (min-width: 768px) {
-  .container { max-width: 750px; }
+  .container { max-width: 750px; } /* Set max-width for medium screens */
 }
 
 @media screen and (min-width: 992px) {
-  .container { max-width: 970px; }
+  .container { max-width: 970px; } /* Set max-width for large screens */
 }
 
 @media screen and (min-width: 1200px) {
-  .container { max-width: 1170px; }
+  .container { max-width: 1170px; } /* Set max-width for extra large screens */
 }
 
 /* Grid layout for the entire site */
 .site-layout {
-  display: grid;
+  display: grid; /* Use grid layout */
   grid-template-areas:
     "header"
     "main"
-    "footer";
-  min-height: 100vh;
+    "footer"; /* Define grid areas for header, main, and footer */
+  min-height: 100vh; /* Ensure full viewport height */
 }
 
-.header { grid-area: header; }
+.header { grid-area: header; /* Assign grid area for header */ }
 .main-content { 
-  grid-area: main;
-  width: 100%;
+  grid-area: main; /* Assign grid area for main content */
+  width: 100%; /* Full width for main content */
+  padding: var(--spacing-large); /* Add padding to main content */
 }
-.footer { grid-area: footer; }
+.footer { grid-area: footer; /* Assign grid area for footer */ }
 
 /* ====================================
    HEADER STYLES 
    ==================================== */
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Multi-Layer Header Styling */
 .multi-layer-header {
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
 }
 
 /* Secondary Layer: Promotional Banner */
 .header__secondary {
-    background-color: var(--color-secondary); /* Using your color variable for secondary elements */
-    color: #ffffff; /* White text for contrast */
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    background-color: var(--color-secondary); /* Background color for secondary header */
+    color: #ffffff; /* Text color for secondary header */
+    text-align: center; /* Center text alignment */
+    padding: var(--spacing-medium); /* Add padding for inner spacing */
+    font-size: 1rem; /* Font size for secondary header */
+    transition: background-color var(--transition-speed) ease; /* Smooth transition for background color */
 }
 
 .header__secondary a {
-    color: #ffffff;
-    text-decoration: underline;
-    margin-left: 0.5rem;
+    color: #ffffff; /* Link color in secondary header */
+    text-decoration: underline; /* Underline links in secondary header */
+    margin-left: var(--spacing-small); /* Add left margin for spacing */
 }
-
-
-
-
 
 /* Primary Layer: Main Navigation */
 .header__primary {
-    background-color: var(--color-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    background-color: var(--color-primary); /* Background color for primary header */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: var(--spacing-medium); /* Add padding for spacing */
 }
 
 .header__logo a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #ffffff; /* Logo link color */
+    font-size: 1.5rem; /* Font size for logo */
+    font-weight: bold; /* Bold font for logo */
+    text-decoration: none; /* Remove underline from logo */
+    transition: color var(--transition-speed) ease; /* Smooth transition for logo color */
 }
 
 .header__nav {
-    display: flex;
+    display: flex; /* Use flexbox for navigation items */
 }
 
 .header__menu {
-    display: flex;
-    list-style-type: none;
+    display: flex; /* Use flexbox for menu items */
+    list-style-type: none; /* Remove default list styling */
 }
 
 .header__menu-item {
-    margin-left: 1.5rem;
+    margin-left: var(--spacing-large); /* Add left margin for spacing between menu items */
 }
 
 .header__menu-link {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 1.1rem;
+    color: #ffffff; /* Link color in menu */
+    text-decoration: none; /* Remove underline from menu links */
+    transition: color var(--transition-speed) ease; /* Smooth transition for link color */
+    font-size: 1.1rem; /* Font size for menu links */
 }
 
 .header__menu-link:hover,
 .header__menu-link:focus {
-    color: var(--color-secondary); /* Secondary color on hover/focus */
+    color: var(--color-secondary); /* Change link color on hover/focus */
 }
-
-
 
 /* Responsive header layout */
 @media screen and (max-width: 768px) {
     .header__primary {
-        flex-direction: column;
-        text-align: center;
-        padding: var(--spacing-medium);
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: var(--spacing-medium); /* Add padding for spacing */
     }
 
-    .header__menu {
-        flex-direction: column;
-        margin-top: var(--spacing-medium);
+    .header__nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the left */
     }
 
     .header__menu-item {
-        margin: var(--spacing-small) 0;
+        margin-left: 0; /* Remove left margin for stacked items */
+        margin-bottom: var(--spacing-small); /* Add bottom margin for spacing */
     }
 }
 
-
-
-
-/* change background on scroll*/
-.header.scrolled {
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
 /* ====================================
-   SEARCH INPUT STYLES
-   ==================================== */
-
-.header__search {
-    position: relative;
-}
-
-.header__search input {
-    opacity: 0;
-    transition: opacity var(--transition-speed) ease, width var(--transition-speed) ease;
-    width: 0;
-    padding: var(--spacing-small);
-    border: none;
-    border-radius: var(--border-radius);
-}
-
-.header__search:focus-within input {
-    opacity: 1;
-    width: 200px; /* Adjust as needed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====================================
-   FOOTER STYLES
+   FOOTER STYLES 
    ==================================== */
 .footer {
-  background-color: #15495E;
-  color: #FFFFFF;
-  padding: 2rem 0;
+    background-color: var(--color-background-alt); /* Background color for footer */
+    color: var(--color-text); /* Text color for footer */
+    text-align: center; /* Center text alignment */
+    padding: var(--spacing-large); /* Add padding for footer */
+    font-size: 0.9rem; /* Font size for footer */
 }
 
-.footer__content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.footer a {
+    color: var(--color-primary); /* Link color in footer */
+    text-decoration: none; /* Remove underline from footer links */
 }
 
-.footer__section {
-  margin-bottom: 1rem;
-}
-
-.footer__title {
-  color: #FFFFFF;
-  margin-bottom: 1rem;
-}
-
-.footer__list {
-  list-style-type: none;
-}
-
-.footer__list-item {
-  margin-bottom: 0.5rem;
-}
-
-.footer__link {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.footer__link:hover {
-  color: #FFA500;
-}
-
-.footer__form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer__input {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 4px;
-}
-
-.footer__button {
-  padding: 0.5rem 1rem;
-  background-color: #FFA500;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.footer__button:hover {
-  background-color: #FF8C00;
-}
-
-/* Responsive footer layout */
-@media screen and (min-width: 768px) {
-  .footer__content {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer__section {
-    flex: 1;
-    margin-bottom: 0;
-  }
-}
-
-/* ====================================
-   BUTTON STYLES
-   ==================================== */
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #FFA500;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #FF8C00;
-  text-decoration: none;
-}
-
-.button--secondary {
-  background-color: transparent;
-  border: 2px solid #FFA500;
-  color: #FFA500;
-}
-
-.button--secondary:hover {
-  background-color: #FFA500;
-  color: #FFFFFF;
-}
-
-/* ====================================
-   THEME TOGGLE
-   ==================================== */
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  margin-left: 1rem;
-}
-
-.theme-toggle:hover {
-  opacity: 0.8;
-}
-
-/* ====================================
-   ACCESSIBILITY
-   ==================================== */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
-}
-
-@media (forced-colors: active) {
-  a:focus,
-  button:focus,
-  input:focus,
-  textarea:focus,
-  select:focus {
-    outline: 2px solid CanvasText;
-  }
-}
-
-/* ====================================
-   ANIMATIONS
-   ==================================== */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+.footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
 }
 
 /* ====================================
    UTILITY CLASSES
    ==================================== */
-.mt-1 { margin-top: 1rem; }
-.mb-1 { margin-bottom: 1rem; }
-.text-center { text-align: center; }
-
-/* ====================================
-   NEWS GRID
-   ==================================== */
-.news-grid article:nth-child(odd) {
-  background-color: var(--color-background-alt);
-}
-
-.news-grid article:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.news-item {
-  contain: content;
-}
-
-/* ====================================
-   ADDITIONAL STYLES
-   ==================================== */
-/* Add any additional styles for specific pages here */
+.mt-1 { margin-top: var(--spacing-small); } /* Utility class for small top margin */
+.mt-2 { margin-top: var(--spacing-medium); } /* Utility class for medium top margin */
+.mt-3 { margin-top: var(--spacing-large); } /* Utility class for large top margin */
+.mb-1 { margin-bottom: var(--spacing-small); } /* Utility class for small bottom margin */
+.mb-2 { margin-bottom: var(--spacing-medium); } /* Utility class for medium bottom margin */
+.mb-3 { margin-bottom: var(--spacing-large); } /* Utility class for large bottom margin */
