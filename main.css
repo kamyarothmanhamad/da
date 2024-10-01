@@ -222,8 +222,17 @@ a:hover {
 
 /* Multi-Layer Header Styling */
 .multi-layer-header {
+
+
+    position: sticky;
+    top: 0;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: var(--color-primary); /* To avoid transparency issues */   
+   
+    /*width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 /* Secondary Layer: Promotional Banner */
