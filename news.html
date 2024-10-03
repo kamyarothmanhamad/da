@@ -52,95 +52,87 @@
 
 
     
+<main class="news-page">
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">هەواڵ و چالاکییەکان</h1>
+      <p class="hero__subtitle">دوایین هەواڵ و بابەتەکان دەربارەی پەروەردە و پڕۆژەکانمان</p>
+    </div>
+  </section>
 
-    <main>
-        <section class="hero">
-            <h1>هەواڵ و چالاکییەکان</h1>
-            <p>دوایین هەواڵ و بابەتەکان دەربارەی پەروەردە و پڕۆژەکانمان</p>
-        </section>
+  <div class="container">
+    <div class="news-content">
+      <section class="featured-article">
+        <article class="featured-card">
+          <div class="featured-card__image">
+            <img src="featured-news.jpg" alt="وێنەی بابەتی تایبەت">
+          </div>
+          <div class="featured-card__content">
+            <h2 class="featured-card__title">سەردێڕی بابەتی تایبەت</h2>
+            <p class="featured-card__meta">
+              <time datetime="2023-07-01">١ی تەمموزی ٢٠٢٣</time>
+              <span class="featured-card__author">نووسەر: ناوی نووسەر</span>
+            </p>
+            <p class="featured-card__excerpt">کورتەیەک لە ناوەڕۆکی بابەتەکە... ئەم بەشە دەبێت کورتەیەکی ڕاکێشەر بێت بۆ خوێنەر.</p>
+            <a href="#" class="featured-card__link">تەواوی بابەتەکە بخوێنەوە</a>
+          </div>
+        </article>
+      </section>
 
-        <section class="featured-article">
-            <article>
-                <img src="featured-news.jpg" alt="وێنەی بابەتی تایبەت">
-                <h2>سەردێڕی بابەتی تایبەت</h2>
-                <p class="article-meta">
-                    <time datetime="2023-07-01">١ی تەمموزی ٢٠٢٣</time>
-                    <span class="author">نووسەر: ناوی نووسەر</span>
-                </p>
-                <p>کورتەیەک لە ناوەڕۆکی بابەتەکە... ئەم بەشە دەبێت کورتەیەکی ڕاکێشەر بێت بۆ خوێنەر.</p>
-                <a href="#" class="read-more">تەواوی بابەتەکە بخوێنەوە</a>
-            </article>
-        </section>
-
-        <section class="news-grid">
-            <h2>دوایین هەواڵەکان</h2>
-            <div class="articles">
-                <article class="news-card">
-                    <img src="news1.jpg" alt="وێنەی هەواڵی یەکەم">
-                    <h3>سەردێڕی هەواڵ</h3>
-                    <p class="article-meta">
-                        <time datetime="2023-06-15">١٥ی حوزەیرانی ٢٠٢٣</time>
-                    </p>
-                    <p>کورتەیەک لە ناوەڕۆکی هەواڵەکە...</p>
-                    <a href="#" class="read-more">زیاتر بخوێنەوە</a>
-                </article>
-
-                <article class="news-card">
-                    <img src="news2.jpg" alt="وێنەی هەواڵی دووەم">
-                    <h3>سەردێڕی هەواڵ</h3>
-                    <p class="article-meta">
-                        <time datetime="2023-06-10">١٠ی حوزەیرانی ٢٠٢٣</time>
-                    </p>
-                    <p>کورتەیەک لە ناوەڕۆکی هەواڵەکە...</p>
-                    <a href="#" class="read-more">زیاتر بخوێنەوە</a>
-                </article>
-
-                <article class="news-card">
-                    <img src="news3.jpg" alt="وێنەی هەواڵی سێیەم">
-                    <h3>سەردێڕی هەواڵ</h3>
-                    <p class="article-meta">
-                        <time datetime="2023-06-05">٥ی حوزەیرانی ٢٠٢٣</time>
-                    </p>
-                    <p>کورتەیەک لە ناوەڕۆکی هەواڵەکە...</p>
-                    <a href="#" class="read-more">زیاتر بخوێنەوە</a>
-                </article>
-
-                <!-- Add more news articles as needed -->
+      <section class="news-grid">
+        <h2 class="section-title">دوایین هەواڵەکان</h2>
+        <div class="news-cards">
+          <article class="news-card">
+            <div class="news-card__image">
+              <img src="news1.jpg" alt="وێنەی هەواڵی یەکەم">
             </div>
-        </section>
+            <div class="news-card__content">
+              <h3 class="news-card__title">سەردێڕی هەواڵ</h3>
+              <p class="news-card__meta">
+                <time datetime="2023-06-15">١٥ی حوزەیرانی ٢٠٢٣</time>
+              </p>
+              <p class="news-card__excerpt">کورتەیەک لە ناوەڕۆکی هەواڵەکە...</p>
+              <a href="#" class="news-card__link">زیاتر بخوێنەوە</a>
+            </div>
+          </article>
 
-        <nav class="pagination">
-            <ul>
-                <li><a href="#" aria-label="پەڕەی پێشوو">«</a></li>
-                <li><a href="#" aria-current="page">١</a></li>
-                <li><a href="#">٢</a></li>
-                <li><a href="#">٣</a></li>
-                <li><a href="#" aria-label="پەڕەی داهاتوو">»</a></li>
-            </ul>
-        </nav>
+          <!-- Add more news cards here -->
 
-        <aside class="sidebar">
-            <section class="categories">
-                <h2>جۆرەکانی بابەت</h2>
-                <ul>
-                    <li><a href="#">پەروەردە</a></li>
-                    <li><a href="#">تەکنەلۆژیا</a></li>
-                    <li><a href="#">چالاکییەکانی ناوەند</a></li>
-                    <li><a href="#">سەرکەوتنەکان</a></li>
-                </ul>
-            </section>
-            <section class="archive">
-                <h2>ئەرشیف</h2>
-                <ul>
-                    <li><a href="#">حوزەیران ٢٠٢٣</a></li>
-                    <li><a href="#">ئایار ٢٠٢٣</a></li>
-                    <li><a href="#">نیسان ٢٠٢٣</a></li>
-                    <!-- Add more months as needed -->
-                </ul>
-            </section>
-        </aside>
-    </main>
+        </div>
+      </section>
 
+      <nav class="pagination" aria-label="پەڕەکردن">
+        <ul class="pagination__list">
+          <li class="pagination__item"><a href="#" class="pagination__link" aria-label="پەڕەی پێشوو">«</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link pagination__link--active" aria-current="page">١</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">٢</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">٣</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link" aria-label="پەڕەی داهاتوو">»</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <aside class="sidebar">
+      <section class="sidebar__section categories">
+        <h2 class="sidebar__title">جۆرەکانی بابەت</h2>
+        <ul class="sidebar__list">
+          <li class="sidebar__item"><a href="#" class="sidebar__link">پەروەردە</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">تەکنەلۆژیا</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">چالاکییەکانی ناوەند</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">سەرکەوتنەکان</a></li>
+        </ul>
+      </section>
+      <section class="sidebar__section archive">
+        <h2 class="sidebar__title">ئەرشیف</h2>
+        <ul class="sidebar__list">
+          <li class="sidebar__item"><a href="#" class="sidebar__link">حوزەیران ٢٠٢٣</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">ئایار ٢٠٢٣</a></li>
+          <li class="sidebar__item"><a href="#" class="sidebar__link">نیسان ٢٠٢٣</a></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</main>
 
 
 
