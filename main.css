@@ -80,68 +80,6 @@ a:hover {
 
 
 
-/* ====================================
-   HERO SECTION STYLES
-   ==================================== */
-
-.hero {
-  position: relative; /* Allows positioning of the content over the image */
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Hide any overflow from the image */
-  display: flex; /* Use flexbox for alignment */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-}
-
-.hero-image {
-  position: absolute; /* Position the image absolutely within the hero */
-  top: 50%; /* Center the image vertically */
-  left: 50%; /* Center the image horizontally */
-  width: 100%; /* Set to cover the entire section */
-  height: auto; /* Maintain aspect ratio */
-  transform: translate(-50%, -50%); /* Center the image */
-  z-index: 1; /* Ensure the image is behind the content */
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1;  
-} 
-
-.hero-content {
-  position: relative; /* Content on top of the image */
-  z-index: 2; /* Ensure the content is above the image */
-  text-align: center; /* Center text */
-  color: #fff; /* Text color */
-  opacity: 0; /* Start hidden for fade-in effect */
-  transition: opacity 0.5s ease; /* Smooth transition */
-}
-
-.hero-content.show {
-  opacity: 1; /* Show when the class is added */
-}
-
-/* Optional: Add some padding to the text for better readability */
-.hero-content h1,
-.hero-content p {
-  margin: 0; /* Reset margin */
-  padding: 0.5rem; /* Add some padding */
-}
-
-.hero-content h1 {
-  font-size: 3rem; /* Responsive font size */
-}
-
-.hero-content p {
-  font-size: 1.5rem; /* Adjust based on your design */
-}
-
-
 
 
 
@@ -189,26 +127,6 @@ a:hover {
 
 
 
-
-@keyframes glitch {
-  0% { clip: rect(42px, 9999px, 44px, 0); }
-  10% { clip: rect(85px, 9999px, 75px, 0); }
-  20% { clip: rect(99px, 9999px, 40px, 0); }
-  30% { clip: rect(50px, 9999px, 120px, 0); }
-  40% { clip: rect(45px, 9999px, 65px, 0); }
-  50% { clip: rect(12px, 9999px, 77px, 0); }
-  60% { clip: rect(88px, 9999px, 100px, 0); }
-  70% { clip: rect(33px, 9999px, 90px, 0); }
-  80% { clip: rect(68px, 9999px, 50px, 0); }
-  90% { clip: rect(20px, 9999px, 80px, 0); }
-  100% { clip: rect(77px, 9999px, 43px, 0); }
-}
-
-.parallax-divider {
-  position: relative;
-  animation: glitch 1.5s infinite;
-  background: url('glitchy-image.jpg') center/cover no-repeat;
-}
 
 
 
@@ -363,6 +281,199 @@ a:hover {
 
 
 
+
+
+
+
+/* ====================================
+   HERO SECTION STYLES
+   ==================================== */
+
+.hero {
+  position: relative; /* Allows positioning of the content over the image */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide any overflow from the image */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.hero-image {
+  position: absolute; /* Position the image absolutely within the hero */
+  top: 50%; /* Center the image vertically */
+  left: 50%; /* Center the image horizontally */
+  width: 100%; /* Set to cover the entire section */
+  height: auto; /* Maintain aspect ratio */
+  transform: translate(-50%, -50%); /* Center the image */
+  z-index: 1; /* Ensure the image is behind the content */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;  
+} 
+
+.hero-content {
+  position: relative; /* Content on top of the image */
+  z-index: 2; /* Ensure the content is above the image */
+  text-align: center; /* Center text */
+  color: #fff; /* Text color */
+  opacity: 0; /* Start hidden for fade-in effect */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.hero-content.show {
+  opacity: 1; /* Show when the class is added */
+}
+
+/* Optional: Add some padding to the text for better readability */
+.hero-content h1,
+.hero-content p {
+  margin: 0; /* Reset margin */
+  padding: 0.5rem; /* Add some padding */
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Responsive font size */
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Adjust based on your design */
+}
+
+
+
+
+
+
+
+
+/* ====================================
+   2nd section-featured projects STYLES
+   ==================================== */
+.featured-project {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.project-showcase {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-highlights {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.project-highlights li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.project-highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.button--primary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button--primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .project-showcase {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-image, .project-info {
+    flex: none;
+    width: 100%;
+  }
+}
 
 
 
