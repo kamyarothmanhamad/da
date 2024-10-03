@@ -516,14 +516,18 @@ a:hover {
   padding-right: 3rem;
 }
 
+
 .core-values-container {
   flex: 1;
   position: relative;
+  width: 300px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  margin: 0 auto;
 }
 
 .core-values-svg {
   width: 100%;
-  height: auto;
+  height: 100%;
   animation: rotate 20s linear infinite;
 }
 
@@ -532,11 +536,19 @@ a:hover {
   to { transform: rotate(360deg); }
 }
 
+.core-values-svg path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 1;
+}
+
 .core-values-svg text {
-  font-size: 9px; /* Make sure this is visible */
+  font-size: 9px;
   fill: #333;
   letter-spacing: 1px;
 }
+
+
 
 .core-values-svg textPath {
   animation: textRotate 20s linear infinite;
@@ -558,6 +570,9 @@ a:hover {
   width: 60%;
   height: 60%;
 }
+
+
+
 
 .value-icon {
   font-size: 2rem;
