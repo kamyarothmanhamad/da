@@ -1176,7 +1176,7 @@ cite {
   top: 0;
   left: 0;
   right: 0;
-  height: 5px; /* Adjust this value to make the bar thicker or thinner */
+  height: 40px; /* Adjust this value to make the bar thicker or thinner */
   background-color: #1A5F7A;
 }
 
