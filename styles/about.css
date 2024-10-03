@@ -136,8 +136,35 @@
 }
 
 .our-values {
-  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
 }
+
+
+.our-values::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 215, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.our-values::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 215, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
 
 .values-grid {
   display: grid;
