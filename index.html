@@ -107,7 +107,7 @@
               <p>دەزگای پەرەپێدانی پەروەردەیی کوردستان دامەزراویەکی نوێ دامەزراوە کە تایبەتە بە دروستکردن و بەڕێوەبردنی پڕۆژە پەروەردەییەکان بۆ سوودی خوێندکارانی کورد...</p>
             </div>
             
-            <div class="core-values-container">
+            <!--<div class="core-values-container">
               <svg class="core-values-svg" viewBox="0 0 100 100">
                 <circle class="value-circle" cx="50" cy="50" r="40" />
                 <path class="value-path" id="curve" d="M10,50 A40,40 0 0,1 90,50" />
@@ -127,7 +127,34 @@
                   <i class="fas fa-lightbulb"></i>
                 </div>
               </div>
+            </div>-->
+            <div class="core-values-container">
+              <svg class="core-values-svg" viewBox="0 0 100 100">
+                <defs>
+                  <path id="circle" d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/>
+                </defs>
+                <text>
+                  <textPath href="#circle">پەروەردە • کۆمەڵگا • داهێنان • </textPath>
+                </text>
+              </svg>
+              
+              <div class="value-icons">
+                <div class="value-icon" data-value="پەروەردە">
+                  <i class="fas fa-book"></i>
+                </div>
+                <div class="value-icon" data-value="کۆمەڵگا">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="value-icon" data-value="داهێنان">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+              </div>
             </div>
+
+
+
+
+              
           </div>
         
           <a href="about.html" class="button button">زیاتر بخوێنەوە</a>
