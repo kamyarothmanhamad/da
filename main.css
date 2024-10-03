@@ -191,15 +191,6 @@ a:hover {
 
 
 /*FSDFSFSDFSSSSSSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8?*/
-.header__logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.header__logo-img {
-    max-height: 10px; /* Adjust this value to fit your logo size */
-    width: auto;
 
 .header__logo a {
    color: #ffffff;
@@ -207,8 +198,6 @@ a:hover {
    font-weight: bold;
    text-decoration: none;
    transition: color 0.3s ease;
-   display: flex;
-   align-items: center;
    
 }
 
