@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+// for the project page 
 document.addEventListener('DOMContentLoaded', () => {
   const categoryButtons = document.querySelectorAll('.category-button');
   const projectCards = document.querySelectorAll('.project-card');
@@ -174,4 +174,56 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+
+
+// for the about page 
+document.addEventListener('DOMContentLoaded', () => {
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Animate elements on scroll
+  const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    elements.forEach(element => {
+      const elementTop = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (elementTop < windowHeight - 100) {
+        element.classList.add('animated');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', animateOnScroll);
+  animateOnScroll(); // Initial check on page load
+
+  // Counter animation for achievement numbers
+  const animateCounter = (element, target) => {
+    let current = 0;
+    const increment = target / 100;
+    const timer = setInterval(() => {
+      current += increment;
+      element.textContent = Math.round(current);
+      if (current >= target) {
+        element.textContent = target;
+        clearInterval(timer);
+      }
+    }, 20);
+  };
+
+  const achievementNumbers = document.querySelectorAll('.achievement-card__number');
+  achievementNumbers.forEach(number => {
+    const target = parseInt(number.textContent);
+    number.textContent = '0';
+    animateCounter(number, target);
+  });
+});
 
