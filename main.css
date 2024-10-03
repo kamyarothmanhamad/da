@@ -1308,6 +1308,8 @@ cite {
   color: #333;
 }
 
+
+
 .footer__bottom {
   margin-top: 2rem;
   text-align: center;
@@ -1315,9 +1317,33 @@ cite {
   padding-top: 1rem;
 }
 
+
 .footer__copyright, .footer__credit {
   margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.footer__copyright::before,
+.footer__copyright::after,
+.footer__credit::before,
+.footer__credit::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer__copyright::before,
+.footer__credit::before {
+  margin-right: 1rem;
+}
+
+.footer__copyright::after,
+.footer__credit::after {
+  margin-left: 1rem;
+}
+
 
 
 
