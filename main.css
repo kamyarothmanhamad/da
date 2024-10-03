@@ -728,6 +728,20 @@ a:hover {
   color: #FFFFFF;
 }
 
+.button--blue {
+  background-color: transparent;
+  border: 2px solid #FFA500;
+  color: #1A5F7A;
+}
+
+.button--blue :hover {
+  background-color: #FFA500;
+  color: #FFFFFF;
+}
+
+
+
+
 /* ====================================
    THEME TOGGLE
    ==================================== */
