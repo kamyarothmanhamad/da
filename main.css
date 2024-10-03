@@ -198,7 +198,7 @@ a:hover {
 }
 
 .header__logo-img {
-    max-height: 40px; /* Adjust this value to fit your logo size */
+    max-height: 10px; /* Adjust this value to fit your logo size */
     width: auto;
 
 .header__logo a {
