@@ -366,7 +366,7 @@ a:hover {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #333;
+  color: #1A5F7A;
   position: relative;
 }
 
@@ -646,7 +646,7 @@ a:hover {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #333;
+  color: #1A5F7A;
 }
 
 .news-carousel {
@@ -800,7 +800,7 @@ a:hover {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #333;
+  color: #1A5F7A;
 }
 
 .showcase-container {
@@ -831,7 +831,7 @@ h3 {
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #ddd;
+  background-color: #f8f9fa;
 }
 
 .event-item {
