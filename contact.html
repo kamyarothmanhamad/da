@@ -39,76 +39,101 @@
         </div>
     </header> 
 
-    <main>
-        <section class="hero">
-            <h1>پەیوەندیمان پێوە بکە</h1>
-            <p>ئێمە بە پەرۆشین بۆ بیستنی بیروڕاکانت</p>
-        </section>
 
-        <section class="contact-info">
-            <h2>زانیاری پەیوەندی</h2>
-            <ul>
-                <li>
-                    <i class="icon-location" aria-hidden="true"></i>
-                    <span>ناونیشان: شەقامی سالم، هەولێر، هەرێمی کوردستان</span>
-                </li>
-                <li>
-                    <i class="icon-phone" aria-hidden="true"></i>
-                    <span>تەلەفۆن: ٠٧٥٠ ١٢٣ ٤٥٦٧</span>
-                </li>
-                <li>
-                    <i class="icon-email" aria-hidden="true"></i>
-                    <span>ئیمەیڵ: info@kedc.org</span>
-                </li>
+
+
+
+
+<!-- DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+<!-- DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+
+    
+
+    <main class="contact-page">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">پەیوەندیمان پێوە بکە</h1>
+          <p class="hero__subtitle">ئێمە بە پەرۆشین بۆ بیستنی بیروڕاکانت</p>
+        </div>
+      </section>
+    
+      <div class="container">
+        <div class="contact-grid">
+          <section class="contact-info">
+            <h2 class="section-title">زانیاری پەیوەندی</h2>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>ناونیشان: شەقامی سالم، هەولێر، هەرێمی کوردستان</span>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                <span>تەلەفۆن: ٠٧٥٠ ١٢٣ ٤٥٦٧</span>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span>ئیمەیڵ: info@kedc.org</span>
+              </li>
             </ul>
-        </section>
-
-        <section class="contact-form">
-            <h2>فۆڕمی پەیوەندی</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">ناو:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">ئیمەیڵ:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">بابەت:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">نامە:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">ناردن</button>
+          </section>
+    
+          <section class="contact-form">
+            <h2 class="section-title">فۆڕمی پەیوەندی</h2>
+            <form action="#" method="POST" class="form">
+              <div class="form-group">
+                <label for="name" class="form-label">ناو:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">ئیمەیڵ:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">بابەت:</label>
+                <input type="text" id="subject" name="subject" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">نامە:</label>
+                <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">ناردن</button>
             </form>
-        </section>
-
+          </section>
+        </div>
+    
         <section class="faq">
-            <h2>پرسیارە دووبارەکان</h2>
-            <dl>
-                <dt>چۆن دەتوانم بەشداری لە پڕۆژەکانتان بکەم؟</dt>
-                <dd>دەتوانیت لە ڕێگەی فۆڕمی پەیوەندییەوە داوای بەشداریکردن بکەیت یان ڕاستەوخۆ پەیوەندیمان پێوە بکەیت.</dd>
-
-                <dt>ئایا دەتوانم پێشنیاری پڕۆژەی نوێ بکەم؟</dt>
-                <dd>بەڵێ، ئێمە بە خۆشحاڵییەوە گوێ لە بیرۆکە نوێکان دەگرین. تکایە پێشنیارەکەت لە فۆڕمی پەیوەندی بنێرە.</dd>
-
-                <!-- Add more FAQs as needed -->
-            </dl>
+          <h2 class="section-title">پرسیارە دووبارەکان</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-question">چۆن دەتوانم بەشداری لە پڕۆژەکانتان بکەم؟</summary>
+              <p class="faq-answer">دەتوانیت لە ڕێگەی فۆڕمی پەیوەندییەوە داوای بەشداریکردن بکەیت یان ڕاستەوخۆ پەیوەندیمان پێوە بکەیت.</p>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">ئایا دەتوانم پێشنیاری پڕۆژەی نوێ بکەم؟</summary>
+              <p class="faq-answer">بەڵێ، ئێمە بە خۆشحاڵییەوە گوێ لە بیرۆکە نوێکان دەگرین. تکایە پێشنیارەکەت لە فۆڕمی پەیوەندی بنێرە.</p>
+            </details>
+            <!-- Add more FAQs as needed -->
+          </div>
         </section>
-
+    
         <section class="map">
-            <h2>شوێنی ئێمە</h2>
-            <!-- Replace with actual map embed code -->
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.4710403068327!2d44.01012931526168!3d36.19124138008065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400722fe13443461%3A0x3f983880dd2e7bb!2sErbil%2C%20Iraq!5e0!3m2!1sen!2sus!4v1625764215583!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+          <h2 class="section-title">شوێنی ئێمە</h2>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.4710403068327!2d44.01012931526168!3d36.19124138008065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400722fe13443461%3A0x3f983880dd2e7bb!2sErbil%2C%20Iraq!5e0!3m2!1sen!2sus!4v1625764215583!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </section>
+      </div>
     </main>
+    
 
 
+
+    
+<!-- DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+<!-- DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD -->
+
+
+    
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__main">
