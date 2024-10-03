@@ -37,3 +37,47 @@ document.addEventListener('DOMContentLoaded', () => {
     svg.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${Date.now() / 100 % 360}deg)`;
   });
 });
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.news-track');
+  const items = document.querySelectorAll('.news-item');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const dotsContainer = document.querySelector('.news-dots');
+
+  let currentIndex = 0;
+
+  // Create dots
+  items.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.dot');
+
+  function goToSlide(index) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots[currentIndex].classList.remove('active');
+    dots[index].classList.add('active');
+    currentIndex = index;
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    goToSlide(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    goToSlide(currentIndex);
+  });
+});
+
