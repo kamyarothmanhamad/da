@@ -485,7 +485,6 @@ a:hover {
    third section style 
    ==================================== */
 
-
 .about-summary {
   padding: 6rem 2rem;
   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
@@ -533,13 +532,11 @@ a:hover {
   to { transform: rotate(360deg); }
 }
 
-
 .core-values-svg text {
-  font-size: 9px;
+  font-size: 9px; /* Make sure this is visible */
   fill: #333;
   letter-spacing: 1px;
 }
-
 
 .core-values-svg textPath {
   animation: textRotate 20s linear infinite;
@@ -549,7 +546,6 @@ a:hover {
   from { startOffset: 0%; }
   to { startOffset: 100%; }
 }
-
 
 .value-icons {
   position: absolute;
@@ -616,7 +612,6 @@ a:hover {
     margin-bottom: 2rem;
   }
 }
-
 
 
 
