@@ -1164,11 +1164,23 @@ cite {
 
 
 .footer {
+  position: relative;
   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
   color: #333;
   padding: 4rem 2rem 2rem;
   font-size: 0.9rem;
 }
+
+.footer__top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px; /* Adjust this value to make the bar thicker or thinner */
+  background-color: #1A5F7A;
+}
+
+
 
 .footer__content {
   max-width: 1200px;
