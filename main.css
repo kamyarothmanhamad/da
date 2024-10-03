@@ -744,7 +744,7 @@ a:hover {
 }
 
 .button--blue {
-  background-color: transparent;
+  background-color: #FFFFFF;
   border: 2px solid #1A5F7A;
   color: #1A5F7A;
 }
