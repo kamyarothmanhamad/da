@@ -356,7 +356,7 @@ a:hover {
 /* ====================================
    2nd section-featured projects STYLES
    ==================================== */
-.featured-project {
+/*.featured-project {
   padding: 4rem 2rem;
   background-color: #f8f9fa;
   overflow: hidden;
@@ -462,7 +462,7 @@ a:hover {
   background-color: #0056b3;
 }
 
-/* Responsive design */
+/* Responsive design 
 @media (max-width: 768px) {
   .project-showcase {
     flex-direction: column;
@@ -473,7 +473,158 @@ a:hover {
     flex: none;
     width: 100%;
   }
+}*/
+
+.featured-projects {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+  overflow: hidden;
 }
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.projects-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.project-card {
+  flex: 0 0 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
+  transition: filter 0.3s ease;
+}
+
+.project-card:hover::before {
+  filter: brightness(0.5);
+}
+
+.project-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.project-highlights {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.project-highlights li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.project-highlights li::before {
+  content: '•';
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.project-link {
+  align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd700;
+  color: #333;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #fff;
+  color: #333;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.carousel-nav button {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #333;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.carousel-nav button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    height: 400px;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
 
 
 
