@@ -114,3 +114,34 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.querySelector('.projects-carousel');
+  const cards = document.querySelectorAll('.project-card');
+  const prevButton = document.querySelector('.prev-project');
+  const nextButton = document.querySelector('.next-project');
+  let currentIndex = 0;
+
+  function showProject(index) {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showProject(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showProject(currentIndex);
+  });
+
+  // Optional: Auto-rotate projects
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showProject(currentIndex);
+  }, 7000);
+});
+
