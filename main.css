@@ -594,7 +594,7 @@ a:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.button--secondary {
+.button--secondaryy {
   display: block;
   width: max-content;
   margin: 3rem auto 0;
@@ -609,7 +609,7 @@ a:hover {
   z-index: 2;
 }
 
-.button--secondary:hover {
+.button--secondaryy:hover {
   background-color: #fff;
   color: #333;
   transform: translateY(-3px);
