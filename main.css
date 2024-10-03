@@ -533,21 +533,28 @@ a:hover {
   to { transform: rotate(360deg); }
 }
 
-.value-circle {
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.3);
-  stroke-width: 1;
-}
+
 
 .value-path {
   fill: none;
 }
 
 .core-values-svg text {
-  font-size: 8px;
+  font-size: 9px;
   fill: #333;
   letter-spacing: 1px;
 }
+
+
+.core-values-svg textPath {
+  animation: textRotate 20s linear infinite;
+}
+
+@keyframes textRotate {
+  from { startOffset: 0%; }
+  to { startOffset: 100%; }
+}
+
 
 .value-icons {
   position: absolute;
